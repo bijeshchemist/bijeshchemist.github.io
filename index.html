@@ -2,47 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bijesh MB | PhD, Organic Chemistry, IIT Delhi</title>
+    <title>Bijesh M B | PhD, Organic Chemistry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        :root {
+            --primary: #12355b;
+            --accent: #2ec4b6;
+            --bg: #f6f8fb;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --card: #ffffff;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1050px;
             margin: 40px auto;
-            padding: 30px;
-            background: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
+            padding: 45px;
+            background: var(--card);
+            border-radius: 10px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
         }
 
         h1 {
-            margin-bottom: 5px;
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.4em;
         }
 
-        .subtitle {
-            font-size: 1.1em;
-            color: #555;
+        h2 {
+            margin-top: 35px;
+            color: var(--primary);
+            border-left: 5px solid var(--accent);
+            padding-left: 12px;
         }
 
-        hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 20px 0;
+        .contact {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.95em;
         }
 
-        section {
-            margin-bottom: 25px;
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
         }
 
         ul {
@@ -50,18 +62,39 @@
         }
 
         li {
-            margin-bottom: 6px;
+            margin-bottom: 7px;
         }
 
-        .contact p {
-            margin: 3px 0;
+        .job {
+            margin-bottom: 25px;
         }
 
-        .footer {
-            text-align: center;
+        .job-title {
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .date {
             font-size: 0.9em;
-            color: #777;
-            margin-top: 30px;
+            color: var(--muted);
+        }
+
+        .highlight {
+            background: #eef6f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--muted);
         }
     </style>
 </head>
@@ -70,110 +103,135 @@
 <div class="container">
 
     <header>
-        <h1>Your Full Name</h1>
-        <p class="subtitle">PhD in Chemistry | Researcher</p>
-
+        <h1>Bijesh M B</h1>
         <div class="contact">
-            <p><strong>Email:</strong> bijeshchem@gmail.com</p>
-            <p><strong>LinkedIn:</strong> https://linkedin.com/in/yourprofile</p>
-            <p><strong>Google Scholar:</strong> https://scholar.google.com/yourprofile</p>
-            <p><strong>GitHub:</strong> https://github.com/yourusername</p>
+            📞 +91 8826519272 |
+            ✉️ <a href="mailto:bijeshchem@gmail.com">bijeshchem@gmail.com</a><br>
+            📍 Madassery (H), Ashtamichira, Thrissur District, Kerala – 680731
         </div>
     </header>
 
-    <hr>
+    <section>
+        <h2>Profile</h2>
+        <p>
+            PhD in Organic Chemistry from the Indian Institute of Technology Delhi (IIT Delhi).
+            Worked as a Lecturer at Christ College, Irinjalakuda, followed by industry roles
+            at SPi Global (Reaxys vendor team, Elsevier) and Calpine Technologies.
+            Currently working at Elsevier as a Data Discovery and Enrichment Expert.
+            Strong experience in cheminformatics, chemical data curation, retrosynthesis
+            software development, reaction rule validation, and chemical database preparation.
+        </p>
+    </section>
 
     <section>
-        <h2>Research Summary</h2>
-        <p>
-            Brief summary of your research interests, expertise, and career goals.
-            Mention your specialization area in chemistry.
-        </p>
+        <h2>Skills</h2>
+        <ul>
+            <li>JIRA, Confluence, Web application testing</li>
+            <li>RDKit, PubChemPy, SMILES, SMARTS</li>
+            <li>Python (basic to intermediate), Pandas, NumPy, Scikit-learn (learner)</li>
+            <li>Decision-making on chemistry-related Python scripts</li>
+            <li>Chemical database preparation and data curation</li>
+            <li>Reaxys, SciFinder, SPRESI, USPTO</li>
+        </ul>
+
+        <ul>
+            <li>Worked closely with web application teams, QA, and architects on chemistry web apps</li>
+            <li>Strong content curation skills with manual extraction of chemical data from journals and patents</li>
+            <li>Expertise in resolving inconsistencies in chemical information processing</li>
+            <li>Curated datasets (~10,000 reactions) using RDKit, Python, and Pandas</li>
+            <li>Reaction enumeration, substructure matching, SMILES/SMARTS visualization</li>
+            <li>Experienced with Marvin and ChemDraw for structure drawing and mol file generation</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job-title">DATA DISCOVERY AND ENRICHMENT EXPERT</div>
+            <div class="company">Elsevier</div>
+            <div class="date">December 2023 – Present</div>
+            <ul>
+                <li>Working on discovery, enrichment, and quality improvement of chemical data.</li>
+                <li>Supporting data pipelines through expert chemical validation and curation.</li>
+                <li>Collaborating with internal teams to enhance chemical data usability and accuracy.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">CHEMINFORMATIST</div>
+            <div class="company">Calpine Technologies, Cochin</div>
+            <div class="date">2020 – 2023</div>
+            <ul>
+                <li>Involved in the development of retrosynthesis software.</li>
+                <li>Handled database preparation and testing of chemistry reaction rules.</li>
+                <li>Validated accuracy and real-life practicality of machine-generated retrosynthetic routes.</li>
+                <li>Reported bugs related to cheminformatics and chemistry workflows.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">SENIOR SUBJECT MATTER EXPERT</div>
+            <div class="company">Reaxys (Elsevier) – SPi Global, Chennai</div>
+            <div class="date">2017 – 2020</div>
+            <ul>
+                <li>Journal and patent abstracting and indexing for Reaxys.</li>
+                <li>Provided chemistry content expertise and quality control.</li>
+                <li>Proposed reaction mechanisms and identified errors in chemical literature.</li>
+                <li>Contributed to specialized Elsevier projects such as Chemu.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">LECTURER</div>
+            <div class="company">Christ College, Irinjalakuda</div>
+            <div class="date">2016 – 2017</div>
+            <ul>
+                <li>Taught organic chemistry, physical chemistry, and spectroscopy.</li>
+                <li>Handled MSc and BSc level courses including coordination compound spectroscopy.</li>
+            </ul>
+        </div>
+
     </section>
 
     <section>
         <h2>Education</h2>
         <ul>
             <li>
-                <strong>PhD in Chemistry</strong> – University Name, Country  
-                <br>Thesis Title: “Title of Your Thesis”  
-                <br>Year
+                <strong>PhD – Organic Chemistry</strong>, IIT Delhi (2010–2017)<br>
+                Thesis: <em>Self-assembly and anion recognition properties of designer pseudopeptidic molecules</em>
             </li>
-            <li>
-                <strong>Master’s Degree</strong> – University Name, Country  
-                <br>Year
-            </li>
-            <li>
-                <strong>Bachelor’s Degree</strong> – University Name, Country  
-                <br>Year
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Research Experience</h2>
-        <ul>
-            <li>
-                <strong>Position / Role</strong> – Institution / Lab Name  
-                <br>Brief description of your research work and techniques used.
-            </li>
-            <li>
-                <strong>Position / Role</strong> – Institution / Lab Name  
-                <br>Brief description.
-            </li>
+            <li><strong>MSc – Chemistry</strong>, Madras Christian College (2007–2009) – First Class</li>
+            <li><strong>BSc – Chemistry</strong>, Christ College, Calicut University (2004–2007) – First Class</li>
         </ul>
     </section>
 
     <section>
         <h2>Publications</h2>
-        <ul>
-            <li>Author(s). Title. <em>Journal Name</em>, Year.</li>
-            <li>Author(s). Title. <em>Journal Name</em>, Year.</li>
-        </ul>
+        <div class="highlight">
+            <p>Seven peer-reviewed international publications in journals including
+               <em>Chemical Communications</em>, <em>RSC Advances</em>,
+               <em>Molecular Systems Design & Engineering</em>, and
+               <em>PLoS Neglected Tropical Diseases</em>.
+            </p>
+        </div>
     </section>
 
     <section>
-        <h2>Technical Skills</h2>
+        <h2>Recognitions</h2>
         <ul>
-            <li>Experimental Techniques (e.g., NMR, HPLC, GC-MS, XRD)</li>
-            <li>Computational Tools / Software</li>
-            <li>Programming / Data Analysis</li>
+            <li>Employee of the Quarter – Calpine Technologies (2022)</li>
+            <li>AIR 67 – GATE (2010)</li>
+            <li>AIR 285 – CSIR-UGC JRF (2009)</li>
+            <li>Dr. I. M. Mathai Prize for Chemistry – 2008</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Teaching Experience</h2>
-        <ul>
-            <li>Course Name – Role (Teaching Assistant / Instructor)</li>
-            <li>Laboratory Supervision / Mentoring</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Awards & Fellowships</h2>
-        <ul>
-            <li>Award / Fellowship Name – Year</li>
-            <li>Award / Fellowship Name – Year</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Conferences & Presentations</h2>
-        <ul>
-            <li>Title – Conference Name, Year</li>
-            <li>Poster / Oral Presentation</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>References</h2>
-        <p>Available upon request.</p>
-    </section>
-
-    <div class="footer">
-        © Your Name | Last updated: Month Year
-    </div>
+    <footer>
+        © Bijesh M B | Chemistry, Cheminformatics & Data Profile
+    </footer>
 
 </div>
 </body>
 </html>
+
