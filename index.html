@@ -248,6 +248,19 @@
         Scientific Publishing, Metadata Management,
         Scientific Data Analyst, Knowledge Extraction
     </section>
+    <script>
+    // Example: last updated date
+    const el = document.getElementById("lastUpdated");
+    if (el) {
+        el.textContent = new Date().toLocaleDateString();
+    }
+
+    // Example: theme toggle
+    function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
 
 </body>
 </html>
